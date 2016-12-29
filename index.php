@@ -1,8 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MongoDB实例演示</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>MongoDB实例演示</h1>
+    <p>
+    <ul>
+      <li>MongoDB 关系
+        <ul>
+          <li><a href="./relationship.php" target="_blank" title="嵌入式关系演示">嵌入式关系演示</a></li>
+          <li><a href="./relationship.php?demo=2" target="_blank" title="引用式关系演示">引用式关系演示</a></li>
+        </ul>
+      </li>
+    </ul>
+    </p>
+  </body>
+</html>
+
 <?php
+
 //组合URI
 //$uri = ""; //如果为空等同于mongodb://localhost:27017
-$uri = "mongodb://mongoadmin:mongoadmin@192.168.8.234:27017";
-$client = new MongoClient($uri);
+//$uri = "mongodb://mongoadmin:mongoadmin@192.168.8.234:27017";
+//$client = new MongoClient($uri);
 
 //第一种方式。使用selectDB和selectCollention选择库和集合
 //$db = $client->selectDB('demo');
